@@ -43,8 +43,19 @@ public class loopExerMay10 {
 //
 //        System.out.println(" word 2");
 ////===================================
-        System.out.println("shoot me a number pls:");
-            int numbr =scan.nextInt();
+        System.out.println("Enter number you'd like to go up to:");
+            long numbr =scan.nextInt();
+        System.out.println("you chose: "+numbr);
+
+        System.out.println("Iteration#=======#square=======#cubed=======");
+        System.out.println();
+
+            for (int i= 0 ; i <=numbr ; i+=2){
+                System.out.println(+ i +"            |    " + i * i + "           |    "+ i * i * i );
+                System.out.println();
+
+    //System.out.format("the %s jumped over the %s, %d times", "cow", "moon", 2);
+            }
 
 
 
