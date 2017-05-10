@@ -15,24 +15,24 @@ public class loopExerMay10 {
         Scanner scan = new Scanner(System.in);  // new Scanner obj call it 'scan'
 
         ////========================
-        System.out.println( " The FizzBuzz GAME");
-        System.out.println( " print 1-100");
-
-        for( int i=1;  i<=100; i++ ){
-            if(i %3 ==0 && i %5 ==0) {
-                System.out.println(" FizzBuzz ninja!");
-                continue;
-            }
-            if(i %3 == 0){
-                System.out.println("fizz");
-                continue;
-            }
-            if(i %5 == 0){
-                System.out.println("buzz");
-                continue;
-            }
-                System.out.println(i);
-        }//end for
+//        System.out.println( " The FizzBuzz GAME");
+//        System.out.println( " print 1-100");
+//
+//        for( int i=1;  i<=100; i++ ){
+//            if(i %3 ==0 && i %5 ==0) {
+//                System.out.println(" FizzBuzz ninja!");
+//                continue;
+//            }
+//            if(i %3 == 0){
+//                System.out.println("fizz");
+//                continue;
+//            }
+//            if(i %5 == 0){
+//                System.out.println("buzz");
+//                continue;
+//            }
+//                System.out.println(i);
+//        }//end for
 
 // //================================================ Review ENTERING Number  int
 //        System.out.println(" enter a number - integer ");
@@ -44,32 +44,42 @@ public class loopExerMay10 {
 //        String w1 = scan.next();
 //            // next only gets first word..VERSUS nextline that gets the whole sentence
 //
-//        System.out.println(" word 2");
+//        System.out.println(" word 1"+w1);
 ////===================================
-//        System.out.println("Enter number you'd like to go up to:");
-//            long numbr =scan.nextInt();
-//        System.out.println("you chose: "+numbr);
-//
-//        System.out.println("Iteration#=======#square=======#cubed=======");
-//        System.out.println();
-//
-//            for (int i= 0 ; i <=numbr ; i+=2){
-//                System.out.println(+ i +"            |    " + i * i + "           |    "+ i * i * i );
-//                System.out.println();
-//
-//    //printf("'%-5d'", 10);
-//    //System.out.format("the %s jumped over the %s, %d times", "cow", "moon", 2);
-//            }
-// //==================================================
 
+String wantsToContinue;
+    do {
+        System.out.println("Enter number you'd like to go up to:");
+        int limit = scan.nextInt();
+        System.out.println("here is your table for numbr: " + limit);
+        System.out.println();
+
+        System.out.println("number          squared     cubed ");
+        System.out.println("------------|-------------|----------------");
+
+        for (int i = 1; i <= limit; i++) {
+
+////             System.out.printf("%d     | %d    | %d%n", i, i*i , i*i*i);
+
+//             //padding
+            System.out.printf("%-7d     | %-8s    | %d%n", i, i * i, i * i * i);
+
+//                //basic output no formatting
+//                System.out.printf( + i +"            |    " + i * i + "           |    "+ i * i * i );
+
+        }
+        System.out.println("want cont?  y/n");
+        wantsToContinue =scan.next();
+    }while (wantsToContinue.equalsIgnoreCase("y"));
+
+////==================================================
+//
 //        System.out.println("Enter a grade number");
 //        double numbr =scan.nextInt();
 //
-//
-//
 //        System.out.println("=============");
 //
-//        if (numbr >= 88 ){
+//        if (numbr >= 88.9 ){
 //            System.out.println("you ent: "+numbr+ " that equals an A");
 //        }
 //
