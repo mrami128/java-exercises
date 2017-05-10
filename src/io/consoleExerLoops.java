@@ -27,7 +27,6 @@ public class consoleExerLoops {     //this is file name
 // //===========================================
 
 
-
     };// end of psvm -public static void main String args
 };//end of pub class for consoleExerLoops
 

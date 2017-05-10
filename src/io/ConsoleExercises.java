@@ -10,6 +10,7 @@ public class ConsoleExercises    {
             //create instance of the Class --> Scanner
         Scanner scan = new Scanner(System.in);
 
+
 // //================================================
 //        System.out.println("1.Hello  enter an integer  for int AGE");
 //              int age = scan.nextInt();
