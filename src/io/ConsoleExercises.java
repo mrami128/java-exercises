@@ -11,18 +11,18 @@ public class ConsoleExercises    {
         Scanner scan = new Scanner(System.in);
 
 
-// //================================================
-//        System.out.println("1.Hello  enter an integer  for int AGE");
-//              int age = scan.nextInt();
-//              System.out.println("The integer you entered is: " + age);
+// //================================================ENTERING Number  int
+//        System.out.println(" enter a number - integer ");
+//              int numbr = scan.nextInt();
+//              System.out.println("The integer you entered is: " + numbr);
 //
-// //================================================
+// //================================================ENTER Word  String
 //        System.out.println("1.Hello  enter word 1 of 3");
 //        String w1 = scan.next();
 //            // next only gets first word..VERSUS nextline that gets the whole sentence
 //
 //        System.out.println("  enter word 2 of 3");
-//        String w2 = scan.next();
+//         String w2 = scan.next();
 //
 //        System.out.println("  enter word 3 of 3");
 //        String w3 = scan.next();

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by user on 5/9/17.
  */
-public class loopPractice {
+public class loopExerMay9 {
 
 
     public static void main(String[] args) {
@@ -13,9 +13,11 @@ public class loopPractice {
 
 //        // Albums -> New releases 12, Children 8, Greatest hits 10
 //        // All customers can buy more than one album  (while loop)
-//        String yesNo = "Y";
+//
+//      String yesNo = "Y";
 //        while (yesNo.equalsIgnoreCase("Y")) {
-//            System.out.println("What type of album do you want to buy?");
+//
+//           System.out.println("What type of album do you want to buy?");
 //            String type = input.nextLine();
 //
 //            switch (type.toLowerCase()) {
@@ -32,31 +34,44 @@ public class loopPractice {
 //            System.out.println("Do you want to buy another album? (Y/N)");
 //            yesNo = input.nextLine();
 //        }//while end brace
-// //========================== count from 5 to 15
+// //================================= count from 5 to 15
 //        int i=5;
 //        while ( i < 15 ){
 //            System.out.println(+i);
 //            i++;
 //        }
-// //========================== count by 2 upto 100
-//        int i=0;
-//        do {
+//  //  ------------------------------- Refactored using FOR loop vs while------
+//
+//        for (int i=5; i<=15; i++){
 //            System.out.println(i);
-//            i = i + 2;
-//        } while(i<=100);
+//        }
+// //================================== count by 2 upto 100
+//        int count=0;
+//        do {
+//            System.out.println( count);
+//            count = count + 2;
+//        } while( count <= 100);
+// //  ---------------------------------refactored using FOR loop
+//
+//        for(int count =0; count<=100; count+=2){
+//            System.out.println(count);
+//        }
 // // ============================= count back from 100 to neg10 by 5's
+//
 //        int i=100;
 //        do {
 //            System.out.println(i);
 //            i = i -5;
 //        } while(i >=-10);
+//
 // //=============================== start at 2  sq next numb upto 1,000,000
-        long i=2;  // use long instead of int because int not big enough to hold large ass numbr--then goes to zero.
 
-        do {
-            System.out.println(i);
-            i = i *i;
-        } while(i <= 1000000 );
+//        long i=2;  // use long instead of int because int not big enough to hold large ass numbr--then goes to zero.
+//
+//        do {
+//            System.out.println(i);
+//            i = i *i;
+//        } while(i <= 1000000 );
 // //============================= opt cmd escape --inf loop
 
        }//pub stat void main -String args end
