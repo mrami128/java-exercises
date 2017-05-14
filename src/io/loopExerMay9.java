@@ -1,14 +1,11 @@
 package io;
-
 import java.util.Scanner;
 
-/**
- * Created by user on 5/9/17.
- */
+
 public class loopExerMay9 {
 
-
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
 //        // Albums -> New releases 12, Children 8, Greatest hits 10

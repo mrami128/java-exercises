@@ -51,6 +51,7 @@ String wantsToContinue;
     do {
         System.out.println("Enter number you'd like to go up to:");
         int limit = scan.nextInt();
+
         System.out.println("here is your table for numbr: " + limit);
         System.out.println();
 

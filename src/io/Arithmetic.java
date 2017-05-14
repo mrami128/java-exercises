@@ -10,19 +10,19 @@ public class Arithmetic {
 
 
 //        int favNum =12;
-//        System.out.println( favNum);
+//          System.out.println(favNum);
 
 //        String myString="Marc";
-//        System.out.println(myString);
+//          System.out.println(myString);
 
 //        String myString="Y";
-//        System.out.println(myString);
+//          System.out.println(myString);
 
 //        String myString="3.14159";
-//        System.out.println(myString);
+//          System.out.println(myString);
 
-//          double myNumber =  3.14;
-//        System.out.println(myNumber);
+//        double myNumber =  3.14;
+//          System.out.println(myNumber);
 
 //        int x = 5;
 //        System.out.println(x++);
