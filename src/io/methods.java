@@ -13,7 +13,8 @@ public class methods {
         // ======== Set Numbers and Set Variables
 
         Scanner input = new Scanner(System.in);
-        double x, y, answer;
+        double x, y ;
+
         String name;
 
         //===========Get Name
