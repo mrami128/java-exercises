@@ -78,19 +78,22 @@ public class methods {
         System.out.println("\nSubtraction Answer is:" + (x - y));
     }//end doSub
 
-//================= Multiply
+//================= Multiplication Func ===============
 
-    public static int doMult(int x, int y) {
+    public static long doMult (long x, long y) {
+
         if ((x == 0) || (y == 0)) {
-            return 0;
-        } else if (y == 1) {
+            return 0;                           // here if x or y equal zero then answer equal zero..return 0
+
+        } else if (y == 1) {                    // here x times one equals x...so return X value.
             return x;
+
         } else {
-            return x + doMult(x, y - 1);
-        }
+            return x + doMult(x, y - 1);    // here x+ x
+        }                                      //
 
     }// end of doMult
-// ==================== Division
+// ==================== Division Func ==================
 
     public static double doDiv(double x, double y) {
         if (y == 0) {
