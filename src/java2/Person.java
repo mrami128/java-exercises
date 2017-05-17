@@ -1,6 +1,6 @@
 package java2;
 
-class Person {                  //------this is OBJECT / BLUEPRINT --- no PSVM String args
+class Person {                  //----- OBJECT / BLUEPRINT --- no PSVM
 
 
     private String name;           //  the variable - obj states
@@ -8,16 +8,21 @@ class Person {                  //------this is OBJECT / BLUEPRINT --- no PSVM S
 
    // ---- Methods ---------
 
-    public Person (String name){          // this is constructor
-        setName(name);
+
+    String getName(){                   // this is getter
+        return name;
     }
 
     void setName (String name){          //this is setter
         this.name = name;
     }
 
-    String getName(){                   // this is getter
-        return name;
+    public Person (String name){          // this is constructor
+        setName(name);
+    }
+
+    public void sayHello(){             // this just another way to call a function
+        System.out.println("\nhello " +name+ " !");
     }
 
 } //end of class

@@ -8,10 +8,12 @@ public class Addition {           // this OBJ class is called Addition need 2 pa
         return (firstNumber + secondNumber);
     } // end of method
 
-    Addition () {                         // constructor1-- MUST have same name Addition as class -file name-
-        firstNumber = 0;
-        secondNumber = 0;
-    }                                    // end of default constructor
+
+//    Addition () {                         // constructor1-- MUST have same name Addition as class -file name-
+//        firstNumber = 0;
+//        secondNumber = 0;
+//    }                                    // end of default constructor
+
 
     Addition (double x , double y) {      // constructor2---custom-------------
         firstNumber= x;
