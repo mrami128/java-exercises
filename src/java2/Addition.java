@@ -1,29 +1,23 @@
 package java2;
-
-
-public class Addition {         // this class is called Addition need 2 parts: 1variables(aka state).and 2methods(aka behavior)
-
-    double firstNumber;
+                                  // this is OBJECT- Class - blueprint
+public class Addition {           // this OBJ class is called Addition need 2 parts:variables & methods
+    double firstNumber;           // variables  == state of object
     double secondNumber;
 
-    public double  getNumber() {
-
+    public double  getNumber() {             // and methods == behavior
         return (firstNumber + secondNumber);
     } // end of method
 
-    Addition () {                         // construc MUST have same name Addition as class -file name-
+    Addition () {                         // constructor1-- MUST have same name Addition as class -file name-
+        firstNumber = 0;
+        secondNumber = 0;
+    }                                    // end of default constructor
 
-        firstNumber = 10;
-        secondNumber = 20;
-    }                                   // end of default constructor
-
-    Addition (double L , double B) {
-
-        firstNumber= L;
-        secondNumber= B;
-    }                                   //end of custom constructor
-
-    }  // end of class
+    Addition (double x , double y) {      // constructor2---custom-------------
+        firstNumber= x;
+        secondNumber= y;
+    }                                     // end of custom constructor
+}  // end of class
 
 
 

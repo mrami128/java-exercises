@@ -1,16 +1,23 @@
 package java2;
 
+public class createPerson {         //  PSVM   IS  BELOW
 
-public class createPerson {
+    public static void main(String[] args) {
 
-    public static void main(String[] args) {     //this is the program--where magic happen--it has psvm
+        Person person1 = new Person("Marc");         // create new person obj instance
 
-
-        Person me = new Person ();
-
-        me.displayFirstName = "Marc";
+            System.out.println("name1 is:" + person1.getName());    // print the first name
 
 
-    }
-}
+        person1.setName ( "Luis");                  // input the new name to the obj
+
+
+        String name1 = person1.getName();
+
+            System.out.println("name1 is:" + name1);
+
+
+
+    } //end main psvm
+} //end class
 
