@@ -35,7 +35,7 @@ public int getInt(){
 public int getInt(int min, int max){
     int num = this.getInt();                 //feed in the get int function
 
-     if(num>= min  && num <=max) {
+     if(num >= min  && num <=max) {         //
          return num;
      }
          System.out.println( "returnNum out of range");
@@ -47,8 +47,7 @@ public int getInt(int min, int max){
  *  within the min and max    */
 
 
-    public double getDouble(){
-        return scan.nextDouble();
+    public double getDouble(){ return scan.nextDouble();
     }
     public double getDouble(double min, double max){
         double num = this.getDouble();                 //feed in the get double function
