@@ -31,7 +31,7 @@ public class MoviesApplication {
                 break;
             case 1:
                 for(Movie m : listOfMovies){
-                    System.out.println(m.getName)+"-"+m.getCategory() );
+                    System.out.println(m.getName()+"-"+m.getCategory() );
                 break;
                 }
                 System.out.println("Case 1");
