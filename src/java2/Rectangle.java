@@ -14,8 +14,8 @@ public class Rectangle {           // this OBJ class is called Addition need 2 p
         this.length = length;
         this.width = width;
     }
-// 2 baby functions of the constructor for the main class retangle
 
+// 2 baby functions of the constructor for the main class retangle
 
     public double getArea() {
         return length * width;
