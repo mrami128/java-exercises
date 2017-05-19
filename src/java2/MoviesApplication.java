@@ -2,9 +2,6 @@ package java2;
 
 import java.util.Scanner;
 
-/**
- * Created by user on 5/18/17.
- */
 public class MoviesApplication {
 
     public static void main(String[] args) {
@@ -24,37 +21,50 @@ public class MoviesApplication {
 
         int userChoice = input.nextInt();
 
-// make the choice ---------------------->
 //
+    while(true) {
 
-       
-           switch (userChoice) {
-               case 0:
-                   System.out.println("Exiting Now");
-                   System.exit(0);
-                   break;
-               case 1:
-                   System.out.println("Case 1");
-                   break;
-               case 2:
-                   System.out.println("Case 2");
-                   break;
-               case 3:
-                   System.out.println("Case 3");
-                   break;
-               case 4:
-                   System.out.println("Case 4");
-                   break;
-               case 5:
-                   System.out.println("Case 5");
-                   break;
-               default:
-                   System.out.println("Default case");
-                   break;
-           } // end case
+        switch (input.nextInt()) {
+            case 0:
+                System.out.println("Exiting Now");
+                System.exit(0);
+                break;
+            case 1:
+                for(Movie m : listOfMovies){
+                    System.out.println(m.getName)+"-"+m.getCategory() );
+                break;
+                }
+                System.out.println("Case 1");
 
+                for(Movie m : listOfMovies) {
+                    if (m.getCategory().equalsIgnoreCase("animated")) {
+                        System.out.println(m.getName() + "-" + m.getCategory());
+                        break;
+                    }
+                }
+            case 2:
+                System.out.println("Case 2");
+                break;
+            case 3:
+                System.out.println("Case 3");
+                break;
+            case 4:
+                System.out.println("Case 4");
+                break;
+            case 5:
+                System.out.println("Case 5");
+                break;
+            default:
+                System.out.println("Default case");
+                break;
+        } // end case
 
+    }//end while
 
     }//end psvm Str args
 
 }// end class
+
+/*
+
+ */
