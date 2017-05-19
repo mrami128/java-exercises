@@ -14,11 +14,7 @@ public class Addition {           // this OBJ class is called Addition need 2 pa
 //        secondNumber = 0;
 //    }                                    // end of default constructor
 
-
-    Addition (double x , double y) {      // constructor2---custom-------------
-        firstNumber= x;
-        secondNumber= y;
-    }                                     // end of custom constructor
+                // end of custom constructor
 }  // end of class
 
 

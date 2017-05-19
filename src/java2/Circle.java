@@ -1,8 +1,6 @@
 package java2;
 
-/**
- * Created by user on 5/17/17.
- */
+
 public class Circle {
 
     private double radius;
