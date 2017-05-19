@@ -1,29 +1,37 @@
 package java2;
 
-class Person {                  //----- OBJECT / BLUEPRINT --- no PSVM
+public class Person {
+
+    private String name;    //protected String will allow visib for children but not
+    private int age;
+    private char gender;
 
 
-    private String name;           //  the variable - obj states
-                                      //  this var is private requiring the
-
-   // ---- Methods ---------
-
-
-    String getName(){                   // this is getter
-        return name;
-    }
-
-    void setName (String name){          //this is setter
+    public Person(String name, int age, char gender) {     // This is constructor bec of private variables
         this.name = name;
+        this.age = age;
+        this.gender = gender;
     }
 
-    public Person (String name){          // this is constructor
-        setName(name);
+    public String description() {
+        return String.format("This is %s and he/she is %d years old ", name, age);
     }
 
-    public void sayHello(){             // this just another way to call a function
-        System.out.println("\nhello " +name+ " !");
+} // end Person class
+
+class Student extends Person {
+
+    private String cohort;                      // we are overloading the object? adding varaiables
+    private String backendLanguage;
+
+
+    public Student(String name, int age, char gender, String cohort, String backendLanguage) {
+        super(name, age, gender); // super - call the parent constructor
     }
 
-} //end of class
+    public String description() {
+        return super.description() + " Cohort: " + cohort + " Language: " + backendLanguage;
+    }
+
+} // end of inheritance class
 
