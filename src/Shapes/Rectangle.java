@@ -1,12 +1,12 @@
 package Shapes;
 
 
-public class Rectangle extends Quadralateral implements Measurable{           // this OBJ class is called Addition need 2 parts:variables & methods
+public class Rectangle extends Quadralateral implements Measurable{      // this OBJ class is called Addition need 2 parts:variables & methods
 
-    public Rectangle(double length, double width) {   // this constructor accepts values.bottom of chute
+    public Rectangle(double length, double width) {                     // this constructor accepts values.bottom of chute
 
-    super(length,width) ;
-
+    super(length,width) ;           // when a class has parent Quad in this case
+                                    //you must first call parent constructor--super(length,width) in this case
     }
 
 
@@ -22,7 +22,7 @@ public class Rectangle extends Quadralateral implements Measurable{           //
 //        this.width = width;
 //    }
 //
-//// -----------------------------2 baby functions of the constructor for the main class retangle
+//// -----------------------------2 baby functions -getters- of the constructor for the main class retangle
 //
 //    public double getArea() {
 //        return length * width;

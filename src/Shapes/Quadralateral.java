@@ -4,8 +4,9 @@ abstract class Quadralateral extends Shape implements Measurable {
 
     protected double length;               // 2 properties /variables  == state of object
     protected double width;
-                                                // this constructor is like baby function for the main retangle
-// start constructor
+
+
+// start constructor .. this constructor is like baby function for the main retangle
 
     public Quadralateral (double length, double width) {   //this constructor accepts values
 
@@ -14,14 +15,20 @@ abstract class Quadralateral extends Shape implements Measurable {
 
     } // -------------end constructor
 
-    // 2 baby functions related to the constructor shown above
+                    // 2 baby methods  related to the constructor shown above
+                    // these 2 are the getters.
 
-    public double getArea() {
+        public double getArea() {
         return length * width;
     }
 
-    public double getPerimeter(){
+        public double getPerimeter(){
         return 2 * length + 2 * width;
     }
 
-} //end Quad
+
+    // need 2 more baby meths..to place setters  here ..step 4
+
+
+
+} //end main class Quad

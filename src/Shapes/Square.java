@@ -1,5 +1,5 @@
 package Shapes;
-
+                                                  // quad is abst..so need to implement mehods
 
 public class Square extends Quadralateral {      //create a class was extending Rectagle
 
