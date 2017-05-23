@@ -1,8 +1,8 @@
 package Shapes;
 
-abstract class Quadralateral extends Shape implements Measurable {
-
-    protected double length;               // 2 properties /variables  == state of object
+abstract class Quadralateral extends Shape implements Measurable {    // cannot instantiate abs classes or interfaces--bec theyre incomplete
+                                                                        // bec theyre incomplete by design
+    protected double length;                                            // 2 properties /variables  == state of object
     protected double width;
 
 

@@ -14,6 +14,7 @@ public class Person {
     }
 
     public String description() {
+
         return String.format("This is %s and he/she is %d years old ", name, age);
     }
 
@@ -21,7 +22,7 @@ public class Person {
 
 class Student extends Person {
 
-    private String cohort;                      // we are overloading the object? adding varaiables
+    private String cohort;                      // we are overloading the object? adding variables
     private String backendLanguage;
 
 

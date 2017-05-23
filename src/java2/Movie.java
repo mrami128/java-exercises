@@ -1,4 +1,5 @@
 package java2;
+
 class Movie {
 
     private String name;
