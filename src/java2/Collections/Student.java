@@ -28,14 +28,12 @@ public class Student {
         }
     }
 
-
     // returns the average of the students grades
     public double getGradeAverage() {
 
         int entrySize = grades.size();
         int gradeEntries = 0;
         double average = 0;
-
 
         for (Integer num: grades) {
             gradeEntries += num;
@@ -44,17 +42,20 @@ public class Student {
         return average;
     }
 
-
 //----------------------------------------------
 
     public static void main(String[] args) {
 
         String yesNo;
 
-        Student student = new Student("everardo");
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Enter student name:");
+                String name = sc.nextLine();
+                Student student = new Student(name);
 
         do {
-            Scanner sc = new Scanner(System.in);
             System.out.println("Enter students grade: ");
             int grade = sc.nextInt();
             student.addGrade(grade);
@@ -65,58 +66,11 @@ public class Student {
 
         } while (yesNo.equalsIgnoreCase("Y"));
 
+        System.out.println(name);                       //Why do both of these work?
+        System.out.println(student.getName());
         System.out.println(student.getGradeAverage());
-    }
 
-}
 
-//--------------------------
-//public class Student {
-//
-//    private String name;
-//    private ArrayList<Integer>grade;     //private int grade;
-//
-//    public Student(String name) {
-//        this.name = name;
-//    }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-////    public int getGrade() {
-////        return grade;
-//
-//
-//
-//    // adds the given grade to the grades property
-//    public void addGrade(int grade) {
-//
-//
-//        //cycle through int list adding int for student total divided by quantity of grade
-//
-//        ArrayList<Integer> getGrade = new ArrayList<>();
-//        getGrade.add(20);
-//        getGrade.add(21);
-//        getGrade.add(22);
-//        System.out.println(getGrade.size()); // integ length
-//
-//    }
-////    // returns the average of the students grades
-////    public double getGradeAverage(){
-////      return
-////    };
-//
-//
-//    public static void main(String[] args) {
-//
-//        Scanner scan = new Scanner(System.in);
-//
-//        System.out.println("enter Student name");
-//
-//        String studentName = scan.nextLine();
-//
-//
-//    }//end main
-//} //end class
-//
+    } // end psvm main
+
+} //end class student
