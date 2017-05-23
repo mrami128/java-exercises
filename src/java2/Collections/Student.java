@@ -7,45 +7,61 @@ import java.util.ArrayList;
 public class Student {
 
     private String name;
-    private ArrayList<Integer> grades;
+    private ArrayList<Integer> grades;  //generic array is better bec its specific to what input it can take in-no primitive types
 
     public Student(String name) {          // this is constructor --so Must be public
         this.name = name;
-        this.grades = new ArrayList<>();
+        this.grades = new ArrayList<>();  //
     }
 
-    // returns the student's name
-    public String getName(){
-        return name;
+    // returns the student's name //------------------
+    public String getName() {
+        return name;          // can return null if dont know what to return at first
     }
 
-    // adds the given grade to the grades property
-    public void addGrade(int grade){
-        grades.add(grade);
-        System.out.println();
-        for (Integer num: grades) {
-            System.out.println(num);
-        }
-    }
+    // add the given grade to the grades property //-------------
+    public void addGrade(int grade) {  grades.add(grade); }             //adding grade to the student
+
+//        System.out.println();
+//        for (Integer num: grades) {
+//            System.out.println(num);
+//        }
+
 
     // returns the average of the students grades
     public double getGradeAverage() {
 
-        int entrySize = grades.size();
-        int gradeEntries = 0;
-        double average = 0;
+        int sum =0;
+        for (Integer grade:grades) {sum+=grade;} return (double)sum /grades.size();}
 
-        for (Integer num: grades) {
-            gradeEntries += num;
-        }
-        average = gradeEntries / entrySize;
-        return average;
-    }
-
+//        int entrySize = grades.size();
+//        int gradeEntries = 0;
+//        double average = 0;
+//
+//        for (Integer num : grades) {
+//            gradeEntries += num;
+//        }
+//        average = gradeEntries / entrySize;
+//        return average;
+//        }
 //----------------------------------------------
 
     public static void main(String[] args) {
+    //--------
+     Student student1 =new Student("zach");
+        student1.addGrade(100);
+        student1.addGrade(90);
+        student1.addGrade(80);
+        System.out.println("student 1 avg : " + student1.getGradeAverage());
 
+     Student student2 =new Student("ben");
+        student2.addGrade(100);
+        student2.addGrade(90);
+        student2.addGrade(80);
+        System.out.println("\nstudent 2 avg : " + student2.getGradeAverage());
+
+
+        //-------
         String yesNo;
 
 
